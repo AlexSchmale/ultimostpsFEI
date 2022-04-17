@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.0/css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/desktop.css" media="(min-width:50rem)">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="ofertas">
+            <div class="ofertas__flex">
+                <p>grandes ofertas en comederos</p>
+                <div class="ofertas__flex--idioma">
+                    <p>Español</p>
+                    <p>ARG</p>
+                </div>
+            </div>
+        </div>
+        <div class="header__mobile">
+            <img src="img/Logo (1).png" alt="Logo de la marca">
+            <i class="fa-solid fa-bars header__mobile--logo"></i>
+            <nav class="menu">
+                <ul>
+                    <li class="lista--menu"><i class="fa-solid fa-paw"> Categorias</i></li>
+                    <li class="lista--menu"><i class="fa-solid fa-paw"> Pets</i></li>
+                    <li class="lista--menu"><i class="fa-solid fa-paw"> Nosotros</i></li>
+                    <li class="lista--menu"><i class="fa-solid fa-paw"> Contactanos</i></li>
+                </ul>
+        </nav>
+        </div>
+    </header>
+    <main>
+        <div class="contenido">
+            <h1>¡Es un placer tenerte aquí! </h1>
+            <p>¡Comederos en descuento!</p>
+            <h2>COMEDEROS</h2>
+        </div>
+        <section class="ecommerce">
+            <div class="productosDestacados">
+                <img class="huella" src="img/huella.png" alt="">
+                    <div class="productosDestacadosTitulo">
+                        <h2>Productos</h2>
+                        <h2>Destacados</h2>
+                    </div>
+                    <ul class="listaPD">
+                        <li>Comederos</li>
+                        <li>Accesorios</li>
+                        <li>Comida</li>
+                    </ul>
+            </div>
+            <div class="contenedorTarjetas">
+                <div class="tarjeta">
+                    <img src="img/churrasquito.png" alt="">
+                    <p>Juguete Churrasquito</p>
+                    <p class="precio">$150</p>
+                </div>
+                <div class="tarjeta">
+                    <img src="img/comedero.png" alt="">
+                    <p>Comedero para perro</p>
+                    <p class="precio">$250</p>
+                </div>
+                <div class="tarjeta">
+                    <img src="img/Huesito.png" alt="">
+                    <p>Juguete Huesito</p>
+                    <p class="precio">$650</p>
+                </div>
+            </div>
+        </section>
+<!--     <section class="contactanos">
+        <div class="formulario">
+        <h2>Contáctanos</h2>
+        <p>Nombre y Apellido</p>
+        <p>Ingresá tu correo electónico</p>
+        <p>teléfono</p>
+        </div> -->
+        <form class="contenedor-form" action="preuba.js" method="post">
+            <label for="nombre"></label>
+            <input class="form-size" type="text" name="nombre" id="nombre" placeholder="Nombre y Apellido" required>
+            <label for="email"></label>
+            <input class="form-size" type="email" name="emai" id="email" placeholder="ejemplo@gmail.com" required> 
+            <label for="consulta"></label>
+            <textarea class="form-size" name="consulta" id="consulta" placeholder="ingrese su consulta"></textarea>
+            <select class="form-size" name="motivo"  required>
+                <option value="motivoUno">Cachorros</option>
+                <option value="motivoDos">Adultos</option>
+                <option value="motivoTres">Recomendaciones</option>
+                <option value="motivoCuatro" selected>Combos</option>
+            </select>
+            <label class="pregunta" for="pregunta">El servicio fue de su agrado?
+                <input type="radio" id="pregunta" name="pregunta" value="SI" > SI
+                <input type="radio" id="pregunta" name="pregunta" value="NO"> NO
+            </label>
+            <button class="form-size" type="submit" value="enviar">Enviar</button>
+        </form>
+<!--         <div class="contenedorBotones">
+            <p class=" botones resetear">Resetear</p>
+            <p class="botones enviar">Enviar</p> -->
+        </div>
+    </section>
+    </main>
+    <footer>
+        <div class="newsletter">
+            <div class="tituloNewsletter">
+                <img src="img/Group.png" alt="">
+                <p>Suscríbete para más novedades</p>
+            </div>
+            <div class="correo">
+                <p>Ingresá tu correo electrónico</p>
+                <h3>Suscribirme</h3>
+            </div>
+        </div>
+        <div class="container-info">
+            <img class="logo--footer" src="img/logofooter.png" alt="">
+            <div class="container-info__datos">
+                <img src="img/location 1.png" alt="">
+                <div class="container-localidad">
+                    <h4>localidad</h4>
+                    <p>Calle - provincia</p>
+                </div>
+            </div>
+            <div class="container-info__datos">
+                <img src="img/Phone.png" alt="">
+                <div class="container-tel">
+                    <h4>Número de teléfono</h4>
+                    <p>15-111-111-111</p>
+                </div>
+            </div>
+            <div class="container-info__datos">
+                <img src="img/correo.png" alt="">
+                <div class="container-mail">
+                    <h4>Correo Electrónico</h4>
+                    <p>Dirección de correo</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
